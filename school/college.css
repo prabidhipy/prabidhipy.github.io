@@ -1,0 +1,98 @@
+* {
+   font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  font-size:10px;
+  line-height:20px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+nav ul li{
+  list-style: none;
+  text-align:center;
+  border:1px solid #a66;
+  line-height:20px;
+  padding:20px;
+  margin:10px;
+  width:190px;
+}
+nav ul li a{
+  text-decoration:none;
+  color:#a66;
+  letter-spacing: 1px;
+  font-size:17px;
+}
+
+aside ul li{
+  line-height:20px;
+} 
+
+aside ul li a{
+  color:#a66;
+}
+
+aside p a{ 
+  color:#a66;
+}
+
+header h1{
+  font-family: 'Roboto Slab', serif;
+  text-align:center;
+  letter-spacing:1px;
+  font-size:35px;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  font-size:30px;
+}
+section p{
+  /*indentation*/
+}
+
+section p a{
+   color:#a66;
+}
+section p a:hover{
+  text-decoration: none;
+}
+
+ol li a{
+  color:#a66;
+}
+
+.fa{
+  color:black;
+}

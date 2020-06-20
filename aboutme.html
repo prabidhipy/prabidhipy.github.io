@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head> 
+		<title> About Me </title>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Prabidhi Pyakurel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="js/jquery.min.js"> </script>
+
+		<style>
+			body{
+				background-image:url(aboutback2.jpg);
+				background-size:cover;
+				background-blend-mode:overlay;
+				background-color:lightgrey;
+			} 	
+			@media screen and (max-width:1200px){
+				.aboutmestyles p{
+					width:98%;
+					margin:5px;
+					font-size: 1.2em;
+					color:#343531;
+				}
+				body .aboutmeImage img{
+					display:none;
+				}
+				body{
+					background-image:url(aboutmepicture3.jpg);
+					background-repeat:no-repeat;
+					background-size:100%;
+				}
+				.aboutmestyles h1{
+					font-size: 30px;
+				}
+			}
+		</style>
+	</head>
+	<body> 
+		<div class="navigate">
+			<nav>
+			<div class="logo" >
+				<h1> PRABIDHI PYAKUREL </h1>
+			</div>
+				<div class="topnav" id="myTopnav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="aboutme.html">About Me</a><li>
+						<li> <a href="HTML-and-CSS.html"> HTML and CSS Exercises </a></li>
+						<li> <a href="JavaScript.html"> JavaScript Exercises </a></li>
+						<li><a href="contactme.html">Contact Me</a><li>
+					  </ul>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						</a>
+				</div>
+			</nav>
+		</div>
+		<div class=aboutmestyles>
+			<h1> ABOUT ME- A Student from Kathmandu, Nepal </h1>
+			<div class="aboutmeImage">
+				<img src="aboutmepicture.jpg" alt="" align="left"/>
+			</div>
+
+			<p> Hi! Welcome to my website. To whoever is reading this, here is a chance to get to know me a little better. I am a student pursuing a career in Computing, with a new found interest in website development. As a beginner, I do not have much expertise in this area. But I hope you have a fun time browsing my little website.
+
+			<br/>Listening to music, drawing, browsing through the web and finding new videos and topics that spark my interest is what I normally like to do. Oh, and watching movies and TV shows. So, just some of the things everyone typically enjoys doing. My taste in music, i would say, is very specific. I especially connect to the genres that portray the writer/singer's emotions with great meaning and depth. Drawing has always been something i enjoy doing, and would really love to implement them into my own illustrations someday.
+			</p>
+		</div>
+		<script src="js/popper.min.js"> </script>
+		<script> 
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+		</script>
+	</body>
+</html>

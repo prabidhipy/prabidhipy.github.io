@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title> Rock Paper Scissor </title>
+
+	<style> 
+		body{ 
+			margin:0;
+			padding:20px;
+		 }
+		 #output{
+		 	background:#f5f5f5; 
+		 	padding:10px;
+		 	margin:10px 0;
+		 }
+		 .win {color:green;}
+		 .lost{color:red;}
+		 .draw{color:orange;}
+	</style>
+</head>
+<body> 
+<h1> Welcome to rock paper scissors game. Good Luck! </h1>
+<p> Rock: 1 | Paper: 2 | Scissors: 3</p>
+
+<input type="text" id="userin" placeholder= "Enter your choice" />
+<button id="btn" onclick="play()">PLAY</button>
+
+<div id="output"></div>
+<div id="result"></div>
+
+<script type="text/javascript">
+
+function whatToSay(input){
+	if (input == 1){
+		return(" threw Rock");
+	}
+	else if (input == 2){
+		return(" threw Paper");
+	}
+	else{
+		return(" threw Scissors");
+	}
+}
+
+function play(){
+	var userinput=document.getElementById('userin').value;
+
+	if(userinput ==''){ 
+		alert('please enter a choice: 1, 2 or 3');}
+
+	if (userinput != 1 & userinput != 2 & userinput != 3){ 
+		alert('not a valid entry,please enter a choice: 1, 2 or 3');
+	}
+	else{
+	//document.getElementById('output').innerHTML=userinput;
+	var outputarea=document.getElementById('output');
+	outputarea.innerHTML="You" + whatToSay(userinput);
+	}
+
+	/*if (userinput==1){
+		outputarea.innerHTML="You threw Rock";
+	}
+	elseif (userinput==2){
+		outputarea.innerHTML="You threw Paper";
+	}
+	else{
+		outputarea.innerHTML="You threw Scissors";
+	}*/
+	var compin= Math.round(Math.random() *2 +1);
+	outputarea.innerHTML += ", Computer" + whatToSay(compin);
+	//outputarea.innerHTML+= "" +compin;
+
+	/*if (compin==1){
+		outputarea.innerHTML+=" The computer threw Rock";
+	}
+	elseif (compin==2){
+		outputarea.innerHTML+=" The computer threw Paper";
+	}
+	else{
+		outputarea.innerHTML +=" The computer threw Scissors";
+	}*/
+
+	var resultarea= document.getElementById('result');
+	
+	/*if(userinput == compin){
+		//adds a class draw to the div using javascript
+		resultarea.className ="draw";
+		resultarea.innerHTML= "Bummer, that was a draw!";
+	}
+	else if (userinput== 1 && compin==3){
+		resultarea.className ="win";
+		resultarea.innerHTML= "Congrats, you just won!";
+	}
+	else {
+		resultarea.className ="lost";
+		resultarea.innerHTML= "Sadly, you just lost!";
+	}*/
+	function decide(num1, num2){
+		if(num1 == num2){
+			resultarea.className ="draw";
+			resultarea.innerHTML= "Bummer, that was a draw!";
+		}
+		else if 
+			(num1== 1 && num2==3){
+			resultarea.className ="win";
+			resultarea.innerHTML= "Congrats, you just won!";
+		}
+		else if
+			(num1== 2 && num2==1){
+			resultarea.className ="win";
+			resultarea.innerHTML= "Congrats, you just won!";
+		}
+		else if
+			(num1== 3 && num2==2){
+			resultarea.className ="win";
+			resultarea.innerHTML= "Congrats, you just won!";
+		}
+		else {
+			resultarea.className ="lost";
+			resultarea.innerHTML= "Sadly, you just lost!";
+		}
+	}
+	decide(userinput,compin);
+}
+</script>
+</body>
+</html>

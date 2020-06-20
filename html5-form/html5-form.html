@@ -1,0 +1,101 @@
+<html> 
+	<head> 
+		<title> Temporal Datas </title>
+		<style> 
+			h1{ 
+				float:left;
+				background:red;
+				color:white;
+				width:150px;
+				padding-left: 10px;
+				font-size: 25px;
+				line-height: 50px;
+				margin-bottom: 0px;	
+			}
+
+			#slant{
+				display:inline-block;
+				border-top: 25px solid transparent;
+				border-right: 25px solid transparent;
+				border-bottom: 25px solid red;
+				border-left: 25px solid red;
+				height:0px;
+				width:0px;
+				margin-top:16px;
+
+			}
+
+			label{ 
+				width:30%;
+				display:inline-block;
+			}
+
+			form{
+				background:#ccc;
+				width:400px;
+				padding:30px;
+				margin-top:0px;
+			}
+
+			input{
+				border-radius: 10px;
+				border: 0px solid white;
+				width: 60%;
+				height:20px;
+				margin-bottom:20px;
+			}
+
+			input[type="radio"] {
+				width: 35px;
+			}
+
+			button{
+				display:inline-block;
+				height:50px;
+				width:35%;
+				border-radius: 10px;
+				line-height: 40px;
+				
+			}
+
+			.green {background:green;}
+			.orange {background:orange;}
+
+			button:hover{ 
+				color:white;
+			}
+
+		</style>
+	</head>
+
+	<body> 
+		<h1> Test Form </h1>
+		<div id="slant">
+
+		</div>
+		<form action="/test/" Method="POST">
+			<label for="name"> Name: </label>
+			<input type= "text" id="name"/>
+
+			<label for="email"> Email: </label>
+			<input type="email" id="email"/>
+
+			<label for= "password"> Password: </label>
+			<input type= "password" id="pass"/>
+
+			<label> Age: </label>
+			<input type= "number"/>
+
+			<label> DOB: </label>
+			<input type= "date"/>
+
+			<label> Gender: </label>
+			<input type= "radio" name="gender" id="male" />Male
+			<input type= "radio" name="gender" id="female" /> Female
+			<input type= "radio" name="gender" id="other" /> Other
+
+			<button type= "SUBMIT" class="green"> SUBMIT </button>
+			<button type="RESET" class="orange"> RESET </button> 
+
+	</body>
+</html>

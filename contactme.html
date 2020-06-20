@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head> 
+		<title> Contact Page </title>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Prabidhi Pyakurel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="js/jquery.min.js"> </script>
+		<style>
+			body{
+				background-image:url(background.jpg);
+				background-blend-mode:lighten;
+				background-color:darkgrey;
+			}
+			@media screen and (max-width:1000px)
+			{
+				.contactquestion h2{
+					font-size:2em;
+				}
+				.contactquestion h3{
+					font-size: 1.9em;
+					margin-top:80px;
+				}
+				body .sendBox{
+					width:310px;
+					height:40px;
+					margin-top: -30px;
+				}
+				body{
+					background-size: 1500px;
+				}
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="navigate">
+		<nav>
+			<div class="logo" >
+						<h1> PRABIDHI PYAKUREL </h1>
+					</div>
+					<div class="topnav" id="myTopnav">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a><li>
+							<li> <a href="HTML-and-CSS.html"> HTML and CSS Exercises </a></li>
+							<li> <a href="JavaScript.html"> JavaScript Exercises </a></li>
+							<li><a href="contactme.html">Contact Me</a><li>
+					  	</ul>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+					</div>
+			</nav>
+			</div>
+			<div class="contactquestion">
+				<h2> HAVE ANY QUESTIONS FOR ME? </h2>
+				<h3> Type here to ask! </h3>
+			</div>
+
+			<div class="sendBox">
+				<input class="text" type="text" placeholder="Type to ask a question.">
+				<button>SEND</button>
+			</div>
+
+			<div class="reachme">
+				<h3> REACH ME AT </h3>
+			</div>
+
+			<div class=containinfo>
+			<div class="info">
+				<h3> <i class="fa fa-map-marker" aria-hidden="true"></i>ADDRESS </h3> 
+				<h3> Hadigaun, Kathmandu </h3> 
+			</div>
+
+			<div class="info">
+				<h3><i class="fa fa-mobile" aria-hidden="true"></i>MOBILE </h3> 
+				<h3> +977 9861590996 </h3> 
+			</div>
+
+			<div class="info">
+				<h3> <i class="fa fa-envelope" aria-hidden="true"></i>EMAIL </h3>
+				<h3><a href="https://mail.google.com/"> prabidhi11@gmail.com</a></h3>
+			</div>
+			</div>
+
+			<script src="js/popper.min.js"> </script>
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+			</script>
+	</body>
+	</html>

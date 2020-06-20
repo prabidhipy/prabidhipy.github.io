@@ -1,0 +1,290 @@
+nav .topnav a{
+	text-decoration: none;
+	color:white;
+	letter-spacing: 2px;
+	font-family: 'Merriweather', serif;
+	margin:0px 20px;
+	font-size:1.1em;
+}
+
+div ul li{ 
+	font-size:0.8em;
+	padding:20px;
+	display: inline-block;
+	padding-right:10px;
+}
+
+nav{
+	position:absolute;
+	text-align:center;
+	background:#3B3D40;
+	top:-10px;
+	left:0;
+	right:0;
+	height:79px;
+}
+
+nav a:hover{
+	color:#90A4AE;
+}
+
+.drpdwn ul li{
+	display:none;
+}
+
+.drpdwn ul li a{ 
+	color: black;
+}
+
+div ul li:hover .drpdwn li{
+	display:block;
+	padding:20px 0;
+	background:white;
+	border-bottom:1px solid black;
+	border-radius:10px;
+	font-size:0.8em;
+	width:160px;
+	height:30px;
+}
+
+div ul li:hover .drpdwn{
+	display:block;
+	position:fixed;
+	margin-top:25px;
+	margin-left:-33px;
+}
+
+.drpdwn a:hover{ 
+	font-size:1em;
+	color:#90A4AE;
+}
+
+body{
+	background-color: grey;
+	background-image: url(background.jpg);
+	background-size:cover;
+	background-blend-mode:lighten;
+}
+
+body .forImage img{
+	display:block;
+	height:420px;
+	width:420px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	border-radius:210px;
+	object-fit: cover;
+}
+ 
+body .forImage h2{
+	text-align: center;
+	letter-spacing:1.5px;
+	color:black;
+	font-family: 'Oswald', sans-serif;
+}
+
+body .forImage p {
+	text-align:center;
+	font-size:1.2em;
+	color:black;
+	letter-spacing:2px;
+	font-family: 'Oswald', sans-serif;
+	margin-top:-10px;
+	font-weight: bold;
+}
+
+.logo h1{ 
+	color:white;
+	float:left;
+	margin-left:20px;
+	border-right:1px solid silver;
+	padding:7px;
+	margin-bottom:-1px;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+}
+
+.aboutmestyles p{
+	color:black;
+	display: inline-block;
+	width:50%;
+	margin-left:80px;
+	font-family: 'Sriracha', cursive;
+	font-size: 20px;
+	margin-top:40px;
+}
+
+.aboutmestyles h1{
+	margin-top:95px;
+	text-align: center;
+	margin-bottom:20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+body .aboutmeImage img{
+	height:530px;
+	width:430px;
+	object-fit: cover;
+	display:inline-block;
+	border:6px solid white;
+	margin-left:40px;
+}
+
+.contactquestion h2{
+	margin-top:120px;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:3em;
+	margin-bottom:15px;
+}
+
+.contactquestion h3{
+	font-size:2.6em;
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+body .sendBox{
+	position:static;
+	margin-left:50%;
+	transform: translate(-50%, -50%);
+	height:40px;
+	width:400px;
+	border-radius:50px;
+	background:#3B3D40;
+}
+
+button{
+	position:fixed;
+	left:111%;
+	transform: translate(-50%, -50%);
+	top:19px;
+	height:40px;
+	width:80px;
+	color:black;
+	border-radius:30px;
+	font-size: 1em;
+}
+
+.text{
+	border:none;
+	background:transparent;
+	outline:none;
+	color:#ffffff;
+	line-height:40px;
+	text-align:center;
+}
+
+::placeholder{
+	color:#ffffff;
+}
+
+.reachme{
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	font-size:1em;
+	margin-top:40px;
+	letter-spacing: 3px;
+}
+
+.info h3 a, .info h3{
+	font-weight: bolder;
+	color:black;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+}
+
+.containinfo{
+	justify-content: space-around;
+	display:flex;
+	margin: 0 auto;
+}
+
+.info{
+	text-align: center;
+}
+
+.topnav {
+	overflow:inherit;
+	background:#3B3D40;
+}
+
+.topnav a{
+	float:left;
+	display: block;
+	color: #ffffff;
+	padding: 0px 15px;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+.topnav a:hover {
+  color: #90A4AE;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width:1200px){
+	nav .topnav a{
+		margin:2px;
+		padding:0;
+		font-size:1em;
+	}
+
+	div .logo h1{
+		font-size:1.3em;	
+		line-height:200%;
+	}
+
+	nav a{
+		font-size:1em;
+		margin:0;
+		padding:0;
+	}
+	.sendBox button{
+		width:70px;
+		height:40px;
+		margin-left:10px;
+	}
+	.reachme h3{
+		margin-top:55px;
+		margin-bottom:12px;
+	}
+	.info h3 a, .info h3{
+		font-size:15px;
+		padding-bottom:14px;
+	}
+}
+
+@media screen and (max-width:1508px) {
+
+	.logo{
+		font-size:1em;
+	}
+
+	.topnav a {display: none;}
+	.topnav a.icon {
+	    float: right;
+	    display: block;
+	}
+}
+
+@media screen and (max-width:1508px) {
+  	.topnav.responsive
+   	{
+   		position: relative;
+   	}
+	.topnav .icon {
+	    position: absolute;
+	    right: 10px;
+	    top: 30px;
+ 	}
+  	.topnav.responsive a {
+    	display: block;
+  	}
+}

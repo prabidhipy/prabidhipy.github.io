@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<title> Homepage </title>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Prabidhi Pyakurel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="js/jquery.min.js"> </script>
+
+		<style>
+			@media screen and (max-width:1300px){
+				body .forImage img{
+					margin-top:12%;
+				}
+				body{
+					background-size:1500px;
+				}
+			}	
+
+			@media screen and (max-width:700px){
+				body .forImage img{
+					margin-top:22%;
+				}
+				.forImage h2, .forImage p{
+					line-height:30px;
+				}
+			}
+		</style>
+	</head>
+
+	<body> 
+		<div class="navigate">
+		<nav>
+			<div class="logo" >
+						<h1> PRABIDHI PYAKUREL </h1>
+					</div>
+					<div class="topnav" id="myTopnav">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a><li>
+							<li> <a href="HTML-and-CSS.html"> HTML and CSS Exercises </a></li>
+							<li> <a href="JavaScript.html"> JavaScript Exercises </a></li>
+							<li><a href="contactme.html">Contact Me</a><li>
+					  	</ul>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+					</div>
+			</nav>
+	</div>
+		<div class="forImage">
+			<img src="Images\photo.jpg" alt=""/>
+			<h2> HI THERE! I'M PRABIDHI.</h2>
+			<p>
+				Currently a second year student at the British College.<br/>
+				Welcome to my website! Feel free to explore.
+			</p>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+			</script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title> HTML and CSS </title>
+      <link href="styling.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
+
+   </head>
+   <body>
+   		<h2>Structuring the web (HTML) and Styling the web (CSS) exercises</h2>
+         <ol>
+            <li>
+               <a href="test-site/test-site.html">
+                  test site</a>
+            </li>
+            <li>
+               <a href="first-form/first-form.html">
+                  first form</a>
+            </li>
+            <li>
+               <a href="structure-form/payment-form.html">
+                  structure form</a>
+            </li>
+            <li>
+               <a href="html5-form\html5-form.html">
+                  html5 form</a>
+            </li>
+            <li>
+               <a href="school\college.html">
+                  school</a>
+            </li>
+            <li>
+               <a href="accessibility\accessibility.html">
+                  accessibility</a>
+            </li>
+            <li>
+               <a href="layout\layout-general.html">
+                  layout</a>
+            </li>
+         </ol>
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+       <script>  mybutton = document.getElementById("myBtn");
+         window.onscroll = function() {scrollFunction()};
+
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+         </script>
+   </body>
